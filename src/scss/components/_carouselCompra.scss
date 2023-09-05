@@ -1,0 +1,135 @@
+.cont-thumbnail {
+    margin: 50px 0px 20px 40px;
+    .thumbnail {
+        width: 100px;
+        height: auto;
+        padding: 2px;
+        margin: 0;
+        cursor: pointer;
+        border: 2px solid transparent;
+        transition: border-color 0.3s;
+        
+        &:hover {
+          border: 1px solid $color-hover-thumbnail;
+        }
+    }
+    .card {
+        margin: 0px 200px 0px 40px;
+        border: none;
+        border-radius: 0;
+        img {
+            margin: 0px 0px 40px 0px;
+            border-radius: 0;
+            width: 100%;
+        }
+    }
+    .card-text {
+        position: relative;
+        padding: 25px;
+        width: 50%;
+        border: .5px solid $color-hover-thumbnail;
+        .tittle {
+            display: flex;
+            opacity: 90%;
+            h3 {
+                font-size: 30px ;
+                margin-right: 8px;
+            }
+            h4 { 
+                font-size: 30px;
+                font-weight: 400;
+            }
+        }
+        .marca {
+            position: absolute;
+            right: 0;
+            top: 15px;
+            margin-right: 35px;
+            img {
+                opacity: 80%;
+                width: 110px;
+            }
+        }
+        .precio {
+            position: absolute;
+            margin: 15px 5px;
+            p {
+                font-size: 30px;
+                font-weight: 700;
+                font-family: monospace;
+                opacity: 80%;
+            }
+        }
+        .colores {
+            margin-top: 80px;
+            display: flex;
+            
+            div img {
+                margin: 5px;
+                padding: 2px;
+                width: 50px;
+                border: .3px solid $color-hover-thumbnail;
+            }
+        }
+        nav {
+            border-top: .5px solid $color-hover-thumbnail;
+            padding-top: 10px;
+            margin-top: 50px;
+        }
+        .talles {
+            display: flex;
+            margin: 10px 0px 70px 0px;
+            &-S, &-M, &-L, &-XL {
+                border: .5px solid $color-hover-thumbnail;
+                padding: 25px;
+                margin-right: 3px;
+                font-size: 16px;
+                font-weight: 600;
+            }
+        }
+        button {
+            width: 333px;
+            display: flex;
+            border: none;
+            background-color: #71c55b;
+            opacity: 70%;
+            p {
+                padding: 10px 38px 10px 39px;
+                font-size: 20px;
+                font-weight: 600;
+                background-color: #4ea93b;
+                color: whitesmoke;
+            }
+            
+            a {
+                display: flex;
+                padding: 10px 10px;
+                justify-content: center;
+                img {
+                    width: 30px;
+                    
+                }     
+            }
+            
+        }
+    }
+
+}
+.descripcion {
+    text-align: left;
+    margin: 100px 0px 10px 40px;
+    h2 {
+        opacity: 
+        80%;
+    }
+    p {
+        text-align: left;
+        margin-top: 20px;
+        opacity: 60%;
+    }
+}
+.caracteristicas {
+    text-align: left;
+    margin: 60px;
+    opacity: 60%;           
+}

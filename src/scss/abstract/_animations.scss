@@ -1,0 +1,20 @@
+@keyframes zoomIn {
+    from {
+      transform: scale(0.9895); /* Escala inicial menor */
+      opacity: 0.5;
+    }
+    to {
+      transform: scale(1); /* Escala completa */
+      opacity: 0.8;
+    }
+  }
+
+@keyframes scale {
+   
+    50% {
+      transform: translateY(-7px); /* Mover hacia arriba */
+    }
+}
+
+
+  

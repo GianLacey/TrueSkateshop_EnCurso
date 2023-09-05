@@ -1,0 +1,402 @@
+
+main {
+    * {
+        margin: 0;    
+        padding: 0;
+        box-sizing: inherit;
+    }
+    padding: 0;
+    padding-top: 185px;
+    nav {
+        padding-left: 0px;
+        background-color: transparent;
+        .pagination {
+            .page-item {
+                .page-link{
+                    border: none;
+                    background-color: transparent;
+                    color: black;
+                    opacity: 100%;
+                    cursor: pointer;
+                    &.active {
+                        opacity: 100%;
+                        font-weight: 500;
+                        z-index: 1;
+                    }
+                }
+            }
+            span {
+                display: flex;
+                align-items: center;
+            }
+        }
+    }
+    .banner {
+        justify-content: center;
+        padding: 0;
+        margin-bottom: 15px;
+        opacity: 80%;
+        .imagenBanner{
+            padding: 0;
+            margin: 0;
+            position: relative;
+            display: flex;
+            width: 100%;   
+        }
+    }
+    .titulo2 {
+        padding-left: 40px;
+    }
+
+    .ofertas {
+        display: block;
+        align-self: center;
+        margin-top: 30px;
+        
+        .off {
+            position: relative;
+            padding: 0;
+            .contImgUno{
+                padding: 0px 2px 0px 12px;
+            }
+            .contImgDos {
+                padding: 0px 12px 0px 2px;
+            }
+            .carruselOferta {
+                top: 0;
+                left: 50%;
+                transform: translateX(-50%);
+                margin: 0;
+                padding: 0;
+                position: absolute;
+                background-color: rgba(255, 255, 255, 0.7);
+                color: rgb(58, 57, 57);
+            }
+        }
+        .offCarrusel {
+            padding: 0px 0px 0px 1px;
+            margin-bottom: 40px;
+        }
+        .subtitulo {
+            margin-top: 30px;
+            padding: 0;
+            display: flex;
+        }
+        
+    }
+    .otrasOfertas {
+        padding-top: 50px;
+        justify-content: center;
+        padding: 0;
+        .colum {
+            .row{
+                position: relative;
+                margin: 0px;
+                justify-content: center;
+                img {
+                    width: 660px;
+                    height: 463px;
+                    position: relative;
+                    padding: 5px;
+                    }
+                h3 {
+                    position: absolute;
+                    top: 39%;
+                    color: white;
+                    font-weight: 500;
+                    font-size: 28px;
+                    letter-spacing: 1px;
+                }
+                h2 {
+                    position: absolute;
+                    top: 45%;
+                    color: white;
+                    font-weight: 800;
+                    font-size: 38px;
+                    letter-spacing: 3px;
+                    }
+                a{
+                    position: absolute;
+                    bottom: 30px;
+                    button{
+                        border-radius: 5%;
+                        width: 150px;
+                        height: 40px;
+                        border: none;
+                        font-weight: 700;
+                        font-size: 20px;
+                        background-color: whitesmoke;
+                        color: rgb(42, 41, 41);
+                    }
+                }
+            }
+                
+        }        
+    }
+    @media (max-width: 576px){
+        .otrasOfertas {
+            padding-top: 50px;
+            justify-content: center;
+            padding: 0;
+            .colum {
+                .row{
+                    position: relative;
+                    margin: 0px;
+                    justify-content: center;
+                    img {
+                        width: 100%;
+                        height: auto;
+                        position: relative;
+                        padding: 5px;
+                        }
+                    h3 {
+                        position: absolute;
+                        top: 39%;
+                        color: white;
+                        font-weight: 500;
+                        font-size: 18px;
+                        letter-spacing: 1px;
+                    }
+                    h2 {
+                        position: absolute;
+                        top: 45%;
+                        color: white;
+                        font-weight: 800;
+                        font-size: 28px;
+                        letter-spacing: 3px;
+                        }
+                    a{
+                        position: absolute;
+                        bottom: 30px;
+                        button{
+                            border-radius: 5%;
+                            width: 150px;
+                            height: 40px;
+                            border: none;
+                            font-weight: 700;
+                            font-size: 20px;
+                            background-color: whitesmoke;
+                            color: rgb(42, 41, 41);
+                        }
+                    }
+                }
+                    
+            }        
+        }
+    }
+    //riders
+    .container-fluid {
+        text-align: center;
+        padding: 0;
+    }
+    .ridersTtle {
+        justify-content: left;
+        margin: 20px 5%;
+        font-size: 30px;
+        font-weight: 400;
+        font-family: $textoPageRiders;
+    }
+    .ridersSttle {
+        justify-content: left;
+        margin: 60px 0px 0px 5%;
+        font-size: 30px;
+        font-weight: lighter;
+    }
+    .riders {
+        display: flex;
+        justify-content: center;
+        padding: 0;
+        margin: 0;
+        margin: 10px 0 100px 0;
+        padding-bottom: 100px;
+        border-bottom: 2px solid $color-hover-thumbnail;
+        &-cont {
+            display: inline;
+            text-align: center;
+            padding: 0;
+            width: 100%;
+            opacity: 100%;
+            animation: zoomIn 0.4s ease-in-out;
+            transition: transform 1s ease;
+            &:hover {
+                animation: scale 0.6s ease;
+                transform: translateY(-5px);
+                opacity: 90%;
+            }
+            h3 {
+                margin: 15px 0;
+                font-size: 16px;
+                font-weight: 300;
+                font-family: $textoPageRiders;
+                opacity: 90%;            
+            }
+        }
+    }
+    .rider {
+        padding: 0;
+        
+        &-banner {
+            margin: 100px 0px;
+            padding: 0;
+            opacity: 95%;
+            &-img {
+                width: 100%;
+            }
+            &-nombre {
+                position: absolute;
+            } 
+        }
+        &-info {
+            width: 75%;
+             &-per {
+                display: flex;
+                border-top: 1px solid $color-hover-thumbnail;
+                text-align: left;
+                .ttle { 
+                    padding: 5px;
+                    font-size: 15px;
+                    font-weight: bolder;
+                    font-family: $textoPageRiders;
+                }
+                .infoper {
+                    padding: 5px;
+                    font-size: 16px;
+                    font-family: $textoPageRiders;
+                    a {
+                        text-decoration: none;
+                        color: $amarillo;
+                    }
+                }
+             }
+        }
+        &-gustavo {
+            display: flex;
+            justify-content: center;           
+            img {
+                margin: 20px 0;
+            }
+        }
+        &-jost {
+            padding: 90px 120px;
+        }
+    }
+
+
+
+    .filtroAcordion {
+        padding: 0px 0px 0px 20px;
+        margin: 0;
+    }
+    //skate
+    .contenedorCards, .cardsChicas {
+       .infoSkate {
+            font-size: 16px;
+            opacity: 50%;
+            text-align: justify;
+            padding: 0 50px;
+            .infoSkateTtle {
+                font-size: small;
+            }
+            a {
+                color: $amarillo;
+                text-decoration: none;
+                span {
+                    font-size: 25px;
+                }
+            }
+       } 
+
+    }
+   //CONTACTO
+    .contactar {
+        margin-top: 100px;
+        padding:0px 100px 30px 100px;
+
+        .titulo {
+            display: flex;
+            align-items: center;
+            border-bottom:1px solid rgba(55, 55, 55, 0.3);
+            margin-bottom: 30px;
+        }
+        .info {
+            text-align: left;
+            div {
+                margin-top: 15px;
+                h2 {
+                    font-size: 25px;
+                }
+                p {
+                    opacity: 50%;
+                }
+            }
+        }
+        .formulario {
+            .row {
+                margin: 10px 0px 10px 0px;
+                .btn {
+                    background-color: grey;
+                    border-radius: 0;
+                    float: right;
+                    width: 200px;
+                    height: 40px;
+                    padding: 4px 50px 4px 50px;
+                    font-size: medium;
+                    font-weight: bold;
+                }
+            }
+            
+        }
+        
+        
+    }
+    @media (max-width: 768px ){
+        .contactar {
+            margin-top: 100px;
+            padding:10px;
+    
+            .titulo {
+                display: flex;
+                align-items: center;
+                border-bottom:1px solid rgba(55, 55, 55, 0.3);
+                margin-bottom: 30px;
+            }
+            .info {
+                div {
+                    margin-top: 15px;
+                    h2 {
+                        font-size: 15px;
+                    }
+                    p {
+                        font-size: 15px;
+                        opacity: 50%;
+                    }
+                }
+            }
+            .formulario {
+                .row {
+                    margin: 10px 0px 10px 0px;
+                    input {
+                        margin: 1px;
+                    }
+                    .btn {
+                        background-color: grey;
+                        color: white;
+                        border-radius: 0;
+                        float: right;
+                        width: 200px;
+                        height: 40px;
+                        padding: 4px 50px 4px 50px;
+                        font-size: medium;
+                        font-weight: bold;
+                    }
+                }
+                
+            }
+            
+            
+        }
+    } 
+}
+
+
+

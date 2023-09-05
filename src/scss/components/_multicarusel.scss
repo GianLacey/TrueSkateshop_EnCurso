@@ -1,0 +1,121 @@
+// Estilos del contenedor
+.multicarousel-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    margin: 0 auto;
+    
+  
+  // Estilos de las flechas
+    .prev-button,
+    .next-button {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        border: none;
+        padding: 15px;
+        font-size: 40px;
+        cursor: pointer;
+        background-color: $color-hover-thumbnail;
+        height: 100%;
+        opacity: 100%;
+    &.prev-button {
+        left: 0;
+        color: white;
+    }
+    &.next-button {
+        right: 0;
+        color: white;
+    }
+  }
+}
+
+// Estilos del carrusel y elementos
+.multicarousel {
+    display: flex;
+    transition: transform 0.3s ease-in-out;
+    padding: 30px;
+    .multicarousel-item {
+        flex: 0 0 calc(100% / 5);
+        text-align: left;
+        padding: 10px;
+        // Estilos de las tarjetas
+        .card {
+            width: 100%;
+            border: none;
+            animation: zoomIn 0.4s ease-in-out;
+            transition: transform 1s ease; /* Transición suave al cambiar transformaciones */
+            &:hover {
+              animation: scale 0.6s ease; /* Aplicar la animación al hacer hover */
+              transform: translateY(-7px); /* Realizar un pequeño movimiento hacia arriba */
+              opacity: 90%;
+              }
+            .card-img-top {
+            max-width: 100%;
+            height: auto;
+            border-radius: 0;
+            }
+            .card-text {
+                margin: 15px 0px 5px 10px;
+                font-size: medium;
+            }
+            h4 {
+                margin: 0px 0px 25px 10px;
+                font-size: small;
+                font-weight: 400;
+            }
+            .card-body {
+                padding: 0px;
+                display: inline;
+                justify-content: flex-start;
+                
+                p {
+                    display: inline;
+                    font-size: smaller;
+                    font-weight: bolder;
+                    align-items: center;
+                    padding: 0px 10px 0px 10px;
+                }
+                a {
+                    padding: 0px;
+                    img {
+                        padding: 0px 0px 10px 0px;
+                        display: inline;
+                        align-items: center;
+                        width: 27px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+//medias
+/* Estilos responsivos */
+@media (max-width: 1200px) {
+    .multicarousel-item {
+      flex: 0 0 calc(100% / 4);
+    }
+  }
+  
+  @media (max-width: 992px) {
+    .multicarousel-item {
+      flex: 0 0 calc(100% / 3);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .multicarousel-container {
+        
+        .prev-button,
+        .next-button {
+            padding: 5px;
+            font-size: 20px;
+        }
+    }
+    .multicarousel-item {
+      flex: 0 0 calc(100% / 2);
+    }
+  }  
+
+

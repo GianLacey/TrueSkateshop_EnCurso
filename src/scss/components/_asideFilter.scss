@@ -1,0 +1,68 @@
+.filtroAcordion {
+    /* Estilos generales */
+    .filter-container {
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
+    /* Estilos del acordeón */
+    .filter-section {
+        margin-bottom: 10px;
+        overflow: hidden;
+        position: relative;
+        
+    }
+
+    .filter-title {
+        border: none;
+        border-bottom: 1px solid rgb(55, 55, 55);
+        display: flex;
+        width: 100%;
+        text-align: left;
+        color: rgb(55, 55, 55);
+        font-weight: 700;
+        padding: 10px;
+        position: relative;
+        background-color: white;
+        img {
+            opacity: 75%;
+        }
+    }
+
+    /* Flecha en la derecha del botón */
+    .filter-title img{
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    /* Estilos del contenido */
+    .filter-content {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        text-align: left;
+        a {
+            text-decoration: none;
+            color: rgb(74, 74, 74);
+            img {
+                width: 30px;
+                display: flex;
+            }
+        }
+    }
+    .filter-content-color {
+        display: block;
+        flex-direction: column;
+        padding: 10px;
+        a {
+            text-decoration: none;
+            color: rgb(74, 74, 74);
+            img {
+                width: 30px;
+                display: flex;
+            }
+        }
+    }
+
+}
