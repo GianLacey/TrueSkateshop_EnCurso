@@ -34,13 +34,13 @@ header {
         img {
             width: 25px;
         }
-        .logo{
+        .logo {
             display: flex;
             justify-content: center;
             .logoPagina {
             opacity: 80%;
             width: 220px;
-        }
+            }
         }
         .carrito {
             display: flex;
@@ -124,6 +124,56 @@ header {
         }
     }
     
+
+}
+//HEADER DEL 404
+.error-header {
+    &-preNav {
+        padding: 10px 0;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        .search {
+            display: flex;
+            justify-content: right;
+            align-items: center;
+            padding: 0 10px 0 0;
+            &-box {
+                align-items: center;
+                opacity: 70%;
+                input {
+                    background-color: white;
+                    border: 1px solid $amarillo;
+                    padding: 5px;  
+                }
+            }
+            .toggle {
+                opacity: 70%;
+                background-color: $amarillo;
+                a {
+                    img {
+                        opacity: 70%;
+                        width: 42px;
+                        padding: 5px;
+                    }  
+                }
+                &:hover {
+                    opacity: 100%;
+                }
+            }
+            
+        }
+
+        .logo {
+            display: flex;
+            justify-content: left;
+            padding: 0 0 0 10px;
+            .logoPagina {
+            opacity: 80%;
+            width: 220px;
+            }
+        }
+    }
 }
 
 

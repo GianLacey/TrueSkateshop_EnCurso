@@ -237,12 +237,12 @@ main {
         
         &-banner {
             margin: 100px 0px;
-            padding: 0;
             opacity: 95%;
             &-img {
                 width: 100%;
             }
             &-nombre {
+
                 position: absolute;
             } 
         }
@@ -271,13 +271,21 @@ main {
         }
         &-gustavo {
             display: flex;
-            justify-content: center;           
+            justify-content: center; 
+            padding: 90px 0;          
             img {
                 margin: 20px 0;
             }
         }
         &-jost {
             padding: 90px 120px;
+        }
+        &-helen {
+            display: flex;
+            justify-content: center;           
+            img {
+                margin: 20px 0;
+            }
         }
     }
 
@@ -395,8 +403,61 @@ main {
             
             
         }
-    } 
+    }   
 }
-
+//ERROR 404
+.error-main {
+    background-color: $amarillo;
+    padding-top: 80px;
+    .error {
+        &-gift {
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            img {
+                opacity: 35%;
+               width: 100%;
+                overflow: hidden;
+            }
+            h1 {
+                margin: 20px 20px 0;
+                position: absolute;
+                color: white;
+                font-size: 80px;
+                z-index: 1;
+                top: 30%;
+            }
+            h2 {
+                top: 50%;
+                margin: 0 20px;
+                position: absolute;
+                color: white;
+                font-size: 40px;
+                z-index: 1;
+            }
+            nav {
+                position: absolute;
+                margin-top: 1px;
+                .navbar-nav{
+                    position: relative;
+                    
+                    .nav-item {
+                        position: relative;
+                        font-size: 14px;
+                        font-weight: bolder;
+                        font-family: Arial, Helvetica, sans-serif;
+                        .active, b {
+                            color: #fff;
+                        }
+                        }
+                        
+                        
+                    
+                    
+                }
+            }
+        }
+        
+    }
+    
+}
 
 

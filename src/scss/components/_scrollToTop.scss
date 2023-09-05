@@ -1,0 +1,35 @@
+body {
+    .scroll-to-top {
+        position: fixed;
+        bottom: 30px;
+        right: 20px;
+        display: none;
+        z-index: 1000;
+        transition: opacity 0.3s;
+        &-button {
+            display: block;
+            width: 50px;
+            height: 55px;
+            opacity: 90%;
+            color: #fff;
+            text-align: center;
+            line-height: 40px;
+            font-size: 24px;
+            border: 2px solid $amarillo;
+            border-radius: 4px;
+            text-decoration: none;
+            &:hover {
+                background: $amarillo;
+                opacity: 80%;
+            }
+            .flecha-to-top {
+                img {
+                    width: 25px;
+                }
+            }
+        }
+      }
+      
+}
+
+ 
