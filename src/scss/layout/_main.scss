@@ -557,14 +557,14 @@ main {
                     }
                 }
             }
-            @media(max-width: 1200px) {
+            @media(min-width: 1200px) {
                 h1 {
-                    top: 25%;
+                    top: 40%;
                     font-size: 60px;
                 }
                 h2 {
                     font-size: 40px;
-                    top: 35%;
+                    top: 50%;
                 }
             }
         }

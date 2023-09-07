@@ -656,11 +656,13 @@ header nav .navbar-nav .nav-item:hover .sub-menu {
 .error-header-preNav .search-box input {
   background-color: white;
   border: 1px solid rgb(243, 156, 18);
+  border-radius: 0;
   padding: 5px;
 }
 .error-header-preNav .search-toggle {
   opacity: 70%;
   background-color: rgb(243, 156, 18);
+  border-radius: 0;
 }
 .error-header-preNav .search-toggle a img {
   opacity: 70%;
@@ -676,19 +678,21 @@ header nav .navbar-nav .nav-item:hover .sub-menu {
   padding: 0 0 0 10px;
 }
 .error-header-preNav .logo .logoPagina {
+  margin: 3px;
+  padding: 2px;
   opacity: 80%;
   width: 220px;
 }
 @media (max-width: 576px) {
   .error-header-preNav .search-box input {
     height: 38px;
-    width: 154px;
+    width: 120px;
   }
   .error-header-preNav .search-toggle a, .error-header-preNav .search-toggle img {
     height: 38px;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 576px) {
   .error-header-preNav .search-box input {
     height: 38px;
     width: 250px;
@@ -888,9 +892,11 @@ footer .pie-info-subscribete .row input {
   padding: 7px;
   margin: 0;
   border: none;
+  border-radius: 0;
 }
 footer .pie-info-subscribete .row button {
   border: none;
+  border-radius: 0;
   margin: 0;
 }
 footer .pie-info-subscribete .row button img {
@@ -1514,14 +1520,14 @@ main .contactar .formulario .row .btn {
     padding: 2px;
   }
 }
-@media (max-width: 1200px) {
+@media (min-width: 1200px) {
   .error-main .error-gift h1 {
-    top: 25%;
+    top: 40%;
     font-size: 60px;
   }
   .error-main .error-gift h2 {
     font-size: 40px;
-    top: 35%;
+    top: 50%;
   }
 }
 

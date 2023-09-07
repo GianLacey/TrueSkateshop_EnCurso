@@ -139,12 +139,14 @@ header {
                 input {
                     background-color: white;
                     border: 1px solid $amarillo;
+                    border-radius: 0;
                     padding: 5px;  
                 }
             }
             &-toggle {
                 opacity: 70%;
                 background-color: $amarillo;
+                border-radius: 0;
                 a {
                     img {
                         opacity: 70%;
@@ -163,9 +165,12 @@ header {
             display: flex;
             justify-content: left;
             padding: 0 0 0 10px;
+
             .logoPagina {
-            opacity: 80%;
-            width: 220px;
+                margin: 3px;
+                padding: 2px;
+                opacity: 80%;
+                width: 220px;
             }
         }
         @media(max-width: 576px) {
@@ -173,7 +178,7 @@ header {
                 &-box {
                     input {
                         height: 38px;
-                        width: 154px;
+                        width: 120px;
                     }
                 }
                 &-toggle {
@@ -183,7 +188,7 @@ header {
                 }
             }
         }
-        @media(min-width: 768px) {
+        @media(min-width: 576px) {
             .search {
                 &-box {
                     input {
