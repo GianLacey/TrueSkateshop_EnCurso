@@ -13,6 +13,7 @@
           border: 1px solid $color-hover-thumbnail;
         }
     }
+    
     .card {
         margin: 0px 200px 0px 40px;
         border: none;
@@ -113,8 +114,110 @@
             
         }
     }
-
+    @media(max-width:768px) {   
+        margin: 2px 2px 30px 2px;     
+        .thumbnail {
+            width: 85px;
+        }
+        .card {
+            margin: 0;
+        }
+        .card-text {
+            padding: 3px;
+            width: 100%;
+            border: none;
+            .tittle {
+                margin-top: 0;
+                padding: 5px 2px;
+                text-align: left;
+                align-items: center;
+                justify-content: left;
+                display: block;
+                width: 100%;
+                h3 {
+                    font-size: 27px;
+                }
+                h4 { 
+                    align-items: center ;
+                    font-size: 25px;
+                    margin-top: 16px;
+                }
+            }
+            .marca {
+                top: 0;
+                left: inherit;
+                img {
+                    width: 100px;
+                }
+            }
+            .precio {
+                p {
+                    font-size: 25px;
+                }
+            }
+            .colores {
+                div img {
+                    width: 70px;
+                    }
+            }
+        }     
+    }
+    @media(min-width:768px) {   
+        margin: 2px;     
+        .thumbnail {
+            width: 95px;
+        }
+        .card {
+            margin: 0;
+        }
+        .card-text {
+            .tittle {
+                margin-top: 0;
+                padding: 5px 2px;
+                text-align: left;
+                align-items: center;
+                justify-content: left;
+                display: block;
+                width: 100%;
+                h3 {
+                    font-size: 27px;
+                }
+                h4 { 
+                    align-items: center ;
+                    font-size: 25px;
+                    margin-top: 8px;
+                }
+            }   
+        }     
+    }
+    @media(min-width:1200px) {   
+        margin: 2px;     
+        .carousel-inner {
+            padding: 0 10px;
+        }
+        .card-text {
+            width: 40%;
+            .tittle {
+                margin-top: 0;
+                padding: 5px 2px;
+                text-align: left;
+                align-items: center;
+                justify-content: left;
+                display: block;
+                width: 100%;
+                h3 {
+                    font-size: 27px;
+                }
+                h4 { 
+                    align-items: center ;
+                    font-size: 25px;
+                    margin-top: 8px;
+                }
+            }   
+        }     
+    }
 }
+
 .descripcion {
     text-align: left;
     margin: 100px 0px 10px 40px;
@@ -127,9 +230,15 @@
         margin-top: 20px;
         opacity: 60%;
     }
+    @media(max-width:768px) {
+        margin: 0;
+    }
 }
 .caracteristicas {
     text-align: left;
     margin: 60px;
-    opacity: 60%;           
+    opacity: 60%;
+    @media(max-width:768px) {
+        margin: 20px;
+    }           
 }

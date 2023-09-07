@@ -74,7 +74,49 @@ footer {
             opacity: 100%;
         }
     }
-
+    //mediaQuarie Redes Sociales footer
+    @media (max-width: 576px) {
+        .fondoFooter {
+            padding-bottom: 30px;
+            &-logos {
+                padding: 15px;
+                .redesSociales {
+                    a {
+                        margin: 0 10px;
+                    }
+                }
+            }
+        }
+    }
+    @media (max-width: 768px) {
+        .fondoFooter {
+            padding-bottom: 30px;
+            &-logos {
+                padding: 15px;
+                .redesSociales {
+                    a {
+                        margin: 0 10px;
+                    }
+                }
+            }
+        }
+    }
+    @media (max-width: 992px) {
+        .fondoFooter {
+            padding-bottom: 30px;
+            &-logos {
+                padding: 10px;
+                .redesSociales {
+                    a {
+                        margin: 0 10px;
+                        img {
+                            width: 40px;
+                        }
+                    }
+                }
+            }
+        }
+    }
     .pie {
         text-align: center;
         &-info {
@@ -174,6 +216,8 @@ footer {
         }
         
     }
+    
+
     .final-pie {
         margin: 0;
         padding: 0;
@@ -184,7 +228,84 @@ footer {
         border-top: 1px solid rgba(255, 255, 255, 0.7);
         padding: 3px 0;
     }
+    //mediaQ pie footer
+    @media(max-width: 576px) {
+        .pie {
+            &-info {
+                justify-content: center;
+                text-align: unset;
+                &-contacto {
+                    text-align: left;
+                }
+                &-subscribete {
+                    text-align: left;
+                    .row {
+                        justify-content: center;
+                    }
+                }
+            }
+        }
+    }
+    @media(max-width: 768px) {
+        .pie {
+            &-info {
+                justify-content: center;
+                text-align: justify;
+                &-contacto {
+                    text-align: left;
+                }
+                &-subscribete {
+                    text-align: left;
+                    .row {
+                        justify-content: center;
+                    }
+                }
+            }
+        }
+    }
+    @media(max-width: 992px) {
+        .pie {
+            &-info {
+                justify-content: center;
+                text-align: justify;
+                &-contacto {
+                    text-align: left;
+                }
+                &-subscribete {
+                    text-align: left;
+                    .row {
+                        justify-content: center;
+                        input, button, img {
+                            height: 60px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @media(min-width: 992px) {
+        .pie {
+            &-info {
+                justify-content: center;
+                text-align: justify;
+                font-size: large;
+                &-contacto {
+                    text-align: left;
+                }
+                &-subscribete {
+                    text-align: left;
+                    .row {
+                        justify-content: center;
+                        input, button, img {
+                            height: 60px;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
+
 //ERROR 404
 .error-footer {
     margin-top: 110px;
@@ -211,5 +332,5 @@ footer {
                 }
             }
         }
-    }
+    }    
 }

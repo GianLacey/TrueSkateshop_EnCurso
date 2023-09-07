@@ -1,10 +1,11 @@
-
-main {
+body {
     * {
-        margin: 0;    
+        margin: 0;
         padding: 0;
-        box-sizing: inherit;
+        box-sizing: border-box;
     }
+}
+main {
     padding: 0;
     padding-top: 185px;
     nav {
@@ -82,8 +83,22 @@ main {
             padding: 0;
             display: flex;
         }
-        
+       //Media Quarie Ofertas
+        @media(max-width: 768px) {
+            .off {
+                .contImgUno {
+                    padding: 10px;
+                }
+                .contImgDos {
+                    padding: 10px;
+                }
+                .carruselOferta {
+                    margin-top: 10px ;
+                }
+            }
+        } 
     }
+    
     .otrasOfertas {
         padding-top: 50px;
         justify-content: center;
@@ -206,15 +221,14 @@ main {
         display: flex;
         justify-content: center;
         padding: 0;
-        margin: 0;
         margin: 10px 0 100px 0;
-        padding-bottom: 100px;
+        padding-bottom: 200px;
         border-bottom: 2px solid $color-hover-thumbnail;
         &-cont {
             display: inline;
             text-align: center;
-            padding: 0;
-            width: 100%;
+            padding: 5px 10px;
+            margin: 0;
             opacity: 100%;
             animation: zoomIn 0.4s ease-in-out;
             transition: transform 1s ease;
@@ -232,17 +246,32 @@ main {
             }
         }
     }
+    @media(max-width: 576px) {
+        .ridersSttle, .ridersTtle {
+            margin: 0 5px;
+        }
+        .riders {
+            padding-bottom: 0;
+            &-cont {
+                h3 {
+                    font-weight: bold;
+                    font-size: large;
+                }
+            }
+        }
+    }
     .rider {
         padding: 0;
-        
+        margin: 0;
         &-banner {
+            padding: 0;
             margin: 100px 0px;
             opacity: 95%;
             &-img {
                 width: 100%;
             }
             &-nombre {
-
+                padding: 0;
                 position: absolute;
             } 
         }
@@ -274,17 +303,41 @@ main {
             justify-content: center; 
             padding: 90px 0;          
             img {
-                margin: 20px 0;
+                margin: 20px 1px;
             }
         }
         &-jost {
+            display: flex;
             padding: 90px 120px;
+            justify-content: center;
+            img {
+                margin: 20px 1px;
+            }
         }
         &-helen {
             display: flex;
             justify-content: center;           
             img {
-                margin: 20px 0;
+                margin: 20px 1px;
+            }
+        }
+        @media(max-width: 576px) {
+            justify-content: center;
+            &-nombre {
+                padding: 0;
+            }
+            &-gustavo {
+                padding: 5px 0 90px 0;
+            }
+            &-jost {
+                justify-content: center;
+                padding: 5px 0 90px 0;
+                img {
+                    padding: 5px 0;
+                }
+            }
+            &-helen {
+                padding: 5px 0 90px 0;
             }
         }
     }
@@ -296,25 +349,25 @@ main {
         margin: 0;
     }
     //skate
-    .contenedorCards, .cardsChicas {
-       .infoSkate {
-            font-size: 16px;
-            opacity: 50%;
-            text-align: justify;
-            padding: 0 50px;
-            .infoSkateTtle {
-                font-size: small;
+    
+    .infoSkate {
+        font-size: 16px;
+        opacity: 50%;
+        text-align: justify;
+        padding: 0 50px;
+        .infoSkateTtle {
+            font-size: small;
+        }
+        a {
+            color: $amarillo;
+            text-decoration: none;
+            span {
+                font-size: 25px;
             }
-            a {
-                color: $amarillo;
-                text-decoration: none;
-                span {
-                    font-size: 25px;
-                }
-            }
-       } 
+        }
+    } 
 
-    }
+    
    //CONTACTO
     .contactar {
         margin-top: 100px;
@@ -447,15 +500,75 @@ main {
                         .active, b {
                             color: #fff;
                         }
-                        }
+                    }
                         
                         
                     
                     
                 }
             }
+            @media(max-width: 576px){
+                h1 {
+                    top: 15%;
+                    font-size: 40px;
+                }
+                h2 {
+                    font-size: 28px;
+                    top: 25%;
+                }
+                nav {
+                    .navbar-nav {
+                        background-color: $amarillo;
+                        border: 1px solid #fff;
+                        opacity: 70%;
+                        height: 207px;
+                        margin-top: 3px;
+                        margin-left: 34px;
+                        .nav-item {
+                            a {
+                                padding: 2px;
+                            }
+                        }
+                    }
+                }
+            }
+            @media(max-width: 992px){
+                h1 {
+                    top: 15%;
+                    font-size: 40px;
+                }
+                h2 {
+                    font-size: 28px;
+                    top: 25%;
+                }
+                nav {
+                    .navbar-nav {
+                        background-color: $amarillo;
+                        border: 1px solid #fff;
+                        opacity: 70%;
+                        height: 207px;
+                        margin-top: 3px;
+                        margin-left: 34px;
+                        .nav-item {
+                            a {
+                                padding: 2px;
+                            }
+                        }
+                    }
+                }
+            }
+            @media(max-width: 1200px) {
+                h1 {
+                    top: 25%;
+                    font-size: 60px;
+                }
+                h2 {
+                    font-size: 40px;
+                    top: 35%;
+                }
+            }
         }
-        
+         
     }
     
 }
