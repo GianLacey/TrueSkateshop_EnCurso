@@ -17,6 +17,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const itemsPerPage = calculateItemsPerPage();
     const translateX = -currentIndex * (100 / itemsPerPage);
     carousel.style.transform = `translateX(${translateX}%)`;
+    const screenWidth = window.innerWidth;
   }
 
   function calculateItemsPerPage() {
@@ -27,8 +28,10 @@ document.addEventListener("DOMContentLoaded", function () {
       return 5;
     } else if (screenWidth >= 768) {
       return 5;
-    } else {
+    } else if (screenWidth >= 576) { 
       return 3;
+    } else {
+      return 1;
     }
   }
 

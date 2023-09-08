@@ -39,6 +39,7 @@
         flex: 0 0 calc(100% / 5);
         text-align: left;
         padding: 10px;
+        margin: 6px;
         // Estilos de las tarjetas
         .card {
             width: 100%;
@@ -88,34 +89,41 @@
             }
         }
     }
+    //medias
+      /* Estilos responsivos */
+      @media (max-width: 1200px) {
+        .multicarousel-item {
+          flex: 0 0 calc(100% / 5);
+        }
+      }
+
+      @media (max-width: 768px) {
+        .multicarousel-container {
+            
+            .prev-button,
+            .next-button {
+                padding: 1px;
+                font-size: 20px;
+            }
+        }
+        .multicarousel-item {
+          flex: 0 0 calc(100% / 3);
+        }
+      }
+      @media (max-width: 576px) {
+        .multicarousel-item {
+          margin: 29px;
+          padding: 25px;
+          text-align: center;
+          flex: 0 0 calc( 100% / 1);
+          .card {
+            padding: 20px;
+            margin: 0px;
+          }
+        }
+      }
 }
 
-//medias
-/* Estilos responsivos */
-@media (max-width: 1200px) {
-    .multicarousel-item {
-      flex: 0 0 calc(100% / 4);
-    }
-  }
-  
-  @media (max-width: 992px) {
-    .multicarousel-item {
-      flex: 0 0 calc(100% / 3);
-    }
-  }
-  
-  @media (max-width: 768px) {
-    .multicarousel-container {
-        
-        .prev-button,
-        .next-button {
-            padding: 5px;
-            font-size: 20px;
-        }
-    }
-    .multicarousel-item {
-      flex: 0 0 calc(100% / 2);
-    }
-  }  
+
 
 

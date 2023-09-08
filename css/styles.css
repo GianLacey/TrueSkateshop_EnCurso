@@ -421,11 +421,13 @@
   display: flex;
   transition: transform 0.3s ease-in-out;
   padding: 30px;
+  /* Estilos responsivos */
 }
 .multicarousel .multicarousel-item {
   flex: 0 0 20%;
   text-align: left;
   padding: 10px;
+  margin: 6px;
 }
 .multicarousel .multicarousel-item .card {
   width: 100%;
@@ -473,28 +475,34 @@
   align-items: center;
   width: 27px;
 }
-
-/* Estilos responsivos */
 @media (max-width: 1200px) {
-  .multicarousel-item {
-    flex: 0 0 25%;
-  }
-}
-@media (max-width: 992px) {
-  .multicarousel-item {
-    flex: 0 0 33.3333333333%;
+  .multicarousel .multicarousel-item {
+    flex: 0 0 20%;
   }
 }
 @media (max-width: 768px) {
-  .multicarousel-container .prev-button,
-  .multicarousel-container .next-button {
-    padding: 5px;
+  .multicarousel .multicarousel-container .prev-button,
+  .multicarousel .multicarousel-container .next-button {
+    padding: 1px;
     font-size: 20px;
   }
-  .multicarousel-item {
-    flex: 0 0 50%;
+  .multicarousel .multicarousel-item {
+    flex: 0 0 33.3333333333%;
   }
 }
+@media (max-width: 576px) {
+  .multicarousel .multicarousel-item {
+    margin: 29px;
+    padding: 25px;
+    text-align: center;
+    flex: 0 0 100%;
+  }
+  .multicarousel .multicarousel-item .card {
+    padding: 20px;
+    margin: 0px;
+  }
+}
+
 body .scroll-to-top {
   position: fixed;
   bottom: 30px;
