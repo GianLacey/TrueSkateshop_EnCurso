@@ -139,7 +139,7 @@ footer {
                 p {
                     padding-top: 10px;
                     color: white;
-                    font-size: smaller;
+                    font-size: small;
                 }
             }
             &-contacto {
@@ -192,13 +192,14 @@ footer {
                     padding: 10px 0;
                     margin: 10px 0;
                     margin-left: 1px;
+                    
                     input {
-                    text-align: center;
-                    padding: 7px;
-                    margin: 0;
-                    border: none;
-                    border-radius: 0;
-                    }
+                        text-align: center;
+                        padding: 7px;
+                        margin: 0;
+                        border: none;
+                        border-radius: 0;
+                        }
                     button {
                         border: none;
                         border-radius: 0;

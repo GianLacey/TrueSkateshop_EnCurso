@@ -78,12 +78,12 @@
     <div class="container-fluid contactar">
       <div class="row">
         <div class="col-12 titulo">
-          <h1>CONTACTANOS</h1>
+          <h2>CONTACTANOS</h2>
         </div>
       </div>
       <div class="row">
         <div class="col-12 col-md-5 col-lg-6 col-xl-6 col-xxl-6 info">
-          <div class="row"><h2>ENCANTADOS DE CONOCERTE</h2>
+          <div class="row"><b>ENCANTADOS DE CONOCERTE</b>
             <p>Somos una tienda creada por riders para riders. Disponemos de las mejores marcas 
               y productos del mundo del Skate. No dudes en visitar nuestra tienda en ###.
             </p>
@@ -104,35 +104,35 @@
         <form class="col-12 col-md-7 col-lg-6 col-xl-6 col-xxl-6 formulario" action="#" method="POST">
           <div class="row">
             <div class="col-12 col-md-3 w-50">
-              <label for="nombre"></label>
+              <label for="nombre" class="d-none"></label>
               <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Nombre">
             </div>
             <div class="col-12 col-md-3 w-50">
-              <label for="apellido"></label>
+              <label for="apellido" class="d-none"></label>
               <input type="text" class="form-control" id="apellido" name="apellido" placeholder="Apellido">
             </div>
           </div>
           <div class="row">
             <div class="col-12 col-md-6 w-100">
-              <label for="mail"></label>
+              <label for="mail" class="d-none"></label>
               <input type="email" class="form-control" id="mail" name="mail" placeholder="Mail">
             </div>
           </div>
           <div class="row">
             <div class="col-12 col-md-6 w-100">
-              <label for="contacto"></label>
+              <label for="contacto" class="d-none"></label>
               <input type="text" class="form-control" id="contacto" name="contacto" placeholder="Contacto">
             </div>
           </div>
           <div class="row">
             <div class="col-12 col-md-6 w-100">
-              <label for="asunto"></label>
+              <label for="asunto" class="d-none"></label>
               <input type="text" class="form-control" id="asunto" name="asunto" placeholder="Asunto">
             </div>
           </div>
           <div class="row">
             <div class="col-12 col-md-6 col-lg-7 col-xl-7 col-xxl-2 w-100">
-              <label for="mensaje"></label>
+              <label for="mensaje" class="d-none"></label>
               <textarea class="form-control" id="mensaje" name="mensaje" rows="3" placeholder="Mensaje"></textarea>
             </div>
           </div>
@@ -168,7 +168,7 @@
               alt="whatsapp"></a>
         </div>
       </div>  
-      <img class="fondo" src="../assest/img/fondoFooter.webp" alt="fondoFooter">
+      <img class="fondo" src="../assest/img/fondo-footer.webp" alt="fondoFooter">
     </div>
     <div class="container pie">
       <div class="row pie-info">
@@ -201,7 +201,8 @@
         <div class="col-12 col-md-6 col-lg-4 pie-info-subscribete">
           <h4>Recibi noticias</h4>
           <div class="row">
-            <input class="col-6 col-md-8" type="text" placeholder="Tu direccion de mail">
+            <label for="mail"></label>
+            <input type="email" class="col-6 col-md-8" id="mail" name="mail" placeholder="Tu direccion de mail">
             <button class="col-2 col-md-4" type="button"><img src="../assest/ico/mail.svg" alt="mail"></button>
           </div>  
         </div>

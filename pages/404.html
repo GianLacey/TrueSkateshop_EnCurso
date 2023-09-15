@@ -27,9 +27,9 @@
             <div class="search-box">
               <input type="text" placeholder="Que buscas?"> 
             </div>           
-            <label for="search-toggle" class="search-toggle">
+            <div for="search-toggle" class="search-toggle">
                 <a href="#"><img class="img-fluid lupaBuscador" src="../assest/ico/search.svg" alt="lupaBuscador"></a>
-            </label>
+            </div>
                     
         </div>         
         </div>
@@ -55,12 +55,12 @@
       
                 <ul class="row navbar-nav ">
                   <li class="col px-3 nav-item"><a class="nav-link" href="../index.html">INICIO</a></li>
-                  <li class="col  px-3 nav-item"><a class="nav-link" href="../hombre.html">HOMBRE</a></li>
-                  <li class="col px-3 nav-item"><a class="nav-link" href="../pages/mujer.html">MUJER</a></li>
-                  <li class="col px-3 nav-item"><a class="nav-link" href="../pages/skate.html">SKATE</a></li>
-                  <li class="col px-3 nav-item"><a class="nav-link" href="../pages/riders.html">RIDERS</a></li>
+                  <li class="col  px-3 nav-item"><a class="nav-link" href="./hombre.html">HOMBRE</a></li>
+                  <li class="col px-3 nav-item"><a class="nav-link" href="./mujer.html">MUJER</a></li>
+                  <li class="col px-3 nav-item"><a class="nav-link" href="./skate.html">SKATE</a></li>
+                  <li class="col px-3 nav-item"><a class="nav-link" href="./riders.html">RIDERS</a></li>
                   <li class="col px-3 nav-item"><a class="nav-link" href="#nosotros">NOSOTROS<b>!</b></a></li>  
-                  <li class="col px-3 nav-item"><a class="nav-link" href="../pages/contacto.html">CONTACTO</a></li>
+                  <li class="col px-3 nav-item"><a class="nav-link" href="./contacto.html">CONTACTO</a></li>
                 </ul>
               </div>
       
@@ -118,7 +118,8 @@
         <div class="col-12 col-md-6 col-lg-4 pie-info-subscribete">
           <h4>Recibi noticias</h4>
           <div class="row">
-            <input class="col-6 col-md-8" type="text" placeholder="Tu direccion de mail">
+            <label for="mail"></label>
+            <input type="email" class="col-6 col-md-8" id="mail" name="mail" placeholder="Tu direccion de mail">
             <button class="col-2 col-md-4" type="button"><img src="../assest/ico/mail.svg" alt="mail"></button>
           </div>  
         </div>

@@ -842,7 +842,7 @@ footer .pie-info-nosotros h4 {
 footer .pie-info-nosotros p {
   padding-top: 10px;
   color: white;
-  font-size: smaller;
+  font-size: small;
 }
 footer .pie-info-contacto {
   margin: 10px 0;
@@ -1366,6 +1366,10 @@ main .contactar .info div {
 }
 main .contactar .info div h2 {
   font-size: 25px;
+}
+main .contactar .info div b {
+  font-size: 25px;
+  font-weight: 500;
 }
 main .contactar .info div p {
   opacity: 50%;
