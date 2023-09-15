@@ -308,8 +308,8 @@
   display: flex;
 }
 .filtroAcordion .filter-content-color {
-  display: block;
-  flex-direction: column;
+  display: flex;
+  flex-direction: row;
   padding: 10px;
 }
 .filtroAcordion .filter-content-color a {
@@ -317,6 +317,7 @@
   color: rgb(74, 74, 74);
 }
 .filtroAcordion .filter-content-color a img {
+  margin: 10px;
   width: 30px;
   display: flex;
 }
@@ -360,7 +361,7 @@
   margin: 15px 0px 5px 10px;
   font-size: medium;
 }
-.contenedorCards .cardsChicas .card h4 {
+.contenedorCards .cardsChicas .card p {
   margin: 0px 0px 25px 10px;
   font-size: small;
   font-weight: 400;
@@ -449,7 +450,7 @@
   margin: 15px 0px 5px 10px;
   font-size: medium;
 }
-.multicarousel .multicarousel-item .card h4 {
+.multicarousel .multicarousel-item .card p {
   margin: 0px 0px 25px 10px;
   font-size: small;
   font-weight: 400;
@@ -1030,26 +1031,6 @@ body * {
 main {
   padding: 0;
   padding-top: 185px;
-}
-main nav {
-  padding-left: 0px;
-  background-color: transparent;
-}
-main nav .pagination .page-item .page-link {
-  border: none;
-  background-color: transparent;
-  color: black;
-  opacity: 100%;
-  cursor: pointer;
-}
-main nav .pagination .page-item .page-link.active {
-  opacity: 100%;
-  font-weight: 500;
-  z-index: 1;
-}
-main nav .pagination span {
-  display: flex;
-  align-items: center;
 }
 main .banner {
   justify-content: center;
