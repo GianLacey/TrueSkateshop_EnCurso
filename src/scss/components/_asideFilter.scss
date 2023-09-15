@@ -52,13 +52,14 @@
         }
     }
     .filter-content-color {
-        display: block;
-        flex-direction: column;
+        display: flex;
+        flex-direction: row;
         padding: 10px;
         a {
             text-decoration: none;
             color: rgb(74, 74, 74);
             img {
+                margin: 10px;
                 width: 30px;
                 display: flex;
             }

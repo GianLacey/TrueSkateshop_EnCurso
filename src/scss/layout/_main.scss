@@ -8,30 +8,6 @@ body {
 main {
     padding: 0;
     padding-top: 185px;
-    nav {
-        padding-left: 0px;
-        background-color: transparent;
-        .pagination {
-            .page-item {
-                .page-link{
-                    border: none;
-                    background-color: transparent;
-                    color: black;
-                    opacity: 100%;
-                    cursor: pointer;
-                    &.active {
-                        opacity: 100%;
-                        font-weight: 500;
-                        z-index: 1;
-                    }
-                }
-            }
-            span {
-                display: flex;
-                align-items: center;
-            }
-        }
-    }
     .banner {
         justify-content: center;
         padding: 0;
